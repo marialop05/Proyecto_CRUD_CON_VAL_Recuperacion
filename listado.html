@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIST OF MATCHES</title>
+    <link rel="stylesheet" href="./css/Listado.css">
+    <link rel="shortcut icon" href="./img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-lZ5UUpNbeWqLZ3vQV4nZl+quO1/W1fWShNzLMU0D6BRJQrB4LIv5CjgWz8d+SYAhMc0ZMzPDz8y92JiGuvM6Ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h2>List of Matches</h2>
+        <table class="responsive-table">
+            <thead>
+                <tr>
+                    <th>ID Team</th>
+                    <th>Local Team</th>
+                    <th>Away Team</th>
+                    <th>Result</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="ID Team">12345</td>
+                    <td data-label="Local Team">CD Europa</td>
+                    <td data-label="Away Team">Colegio Maravillas Benálmadena</td>
+                    <td data-label="Result">18 - 30</td>
+                    <td data-label="Options">
+                        <button class="btn-edit"><i class="fas fa-pencil-alt"></i> Edit</button>
+                        <button class="btn-delete"><i class="fas fa-trash"></i> Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-label="ID Team">123456</td>
+                    <td data-label="Local Team">Trops Málaga</td>
+                    <td data-label="Away Team">HYUNDAI AGRITRASA ALARCOS CIUDAD REAL</td>
+                    <td data-label="Result">33 - 32</td>
+                    <td data-label="Options">
+                        <button class="btn-edit"><i class="fas fa-pencil-alt"></i> Edit</button>
+                        <button class="btn-delete"><i class="fas fa-trash"></i> Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-label="ID Team">1234567</td>
+                    <td data-label="Local Team">Los Olivos</td>
+                    <td data-label="Away Team">Maristas Málaga</td>
+                    <td data-label="Result">29 - 32</td>
+                    <td data-label="Options">
+                        <button class="btn-edit"><i class="fas fa-pencil-alt"></i> Edit</button>
+                        <button class="btn-delete"><i class="fas fa-trash"></i> Delete</button>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <button class="btn-add"><i class="fas fa-plus-square"></i> Add Match</button>
+    </div>
+    <script src="./js/listado.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,108 @@
+/****************************************************************/
+/*      estilo de CRUD                                          */
+/*      author:  María Lucía López López                        */
+/*      version. 2.0                                            */
+/*      css for Inserción.html                                  */
+/*      comment: CRUD for Lenguaje de Marcas - 1ºDAM            */
+/****************************************************************/
+
+body {
+    background: linear-gradient(to right, #005c97, #363795); /* Fondo actualizado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFF;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    transition: background 0.3s ease-in-out, transform 0.3s;
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.container:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-10px);
+}
+
+.container h1 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #02ff70;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    align-self: flex-start;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ff0101;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.2);
+    color: #080808;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #ccc;
+}
+
+.sexo-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+}
+
+.submit-button {
+    background-color: #4caf50;
+    color: #FFF;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}

@@ -1,0 +1,153 @@
+/* Estilos generales */
+
+body {
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFF;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    transition: background 0.3s ease-in-out, transform 0.3s;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.container:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-10px);
+}
+
+.container h2 {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+/* Estilos específicos para el formulario */
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.phone,
+.register-button {
+    margin-top: 10px;
+}
+
+.options {
+    margin-top: 25px;
+}
+
+.options a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease-in-out;
+}
+
+.options a:hover {
+    color: #ffeb3b;
+}
+
+.icon {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    align-self: flex-start;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFF;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #ccc;
+}
+
+.sexo-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+}
+
+.radio-group label {
+    margin-left: 5px;
+    color: #FFF;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.submit-button {
+    background-color: #4caf50;
+    color: #FFF;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}

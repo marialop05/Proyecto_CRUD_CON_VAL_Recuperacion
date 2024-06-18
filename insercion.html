@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSERTION FORM</title>
+    <link rel="stylesheet" href="./css/Inserción.css">
+    <link rel="shortcut icon" href="./img/fav.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <form action="login.html" method="post">
+            <h1>Data Insertion</h1>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="surname">Surname:</label>
+                <input type="text" name="surname" id="surname" placeholder="Enter your surname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="team">Team:</label>
+                <input type="text" name="team" id="team" placeholder="Enter your team" required>
+            </div>
+
+            <div class="sexo-options">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <input type="radio" name="sex" id="male" value="male">
+                    <label for="male"> Men</label>
+
+                    <input type="radio" name="sex" id="female" value="female">
+                    <label for="female"> Women</label>
+
+                    <input type="radio" name="sex" id="other" value="other">
+                    <label for="other"> Other</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="ciclo">Position:</label>
+                <select name="ciclo" id="ciclo">
+                    <option value="">-- Elija su posición --</option>
+                    <option value="portero">Portero</option>
+                    <option value="central">Central</option>
+                    <option value="li">Lateral Izquierdo</option>
+                    <option value="ld">Lateral Derecho</option>
+                    <option value="ei">Extremo Izquierdo</option>
+                    <option value="ed">Extremo Derecho</option>
+                    <option value="pivo">Pivote</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea name="comment" id="comment" rows="3" placeholder="Write something"></textarea>
+            </div>
+
+
+            <button class="submit-button" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="./js/form-validation.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODIFICATION FORM</title>
+    <link rel="stylesheet" href="./css/Modificación.css">
+    <link rel="shortcut icon" href="./img/fav.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form id="modificationForm">
+            <div class="input-group">
+                <label for="firstName">Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your name" value="María" required>
+            </div>
+
+            <div class="input-group">
+                <label for="lastName">Surname:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your surname" value="López López" required>
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Phone:</label>
+                <select name="phone" class="phone" id="phone-prefix">
+                    <option value="+34">+34</option>
+                    <option value="+1">+1</option>
+                    <option value="+2">+2</option>
+                    <option value="+3">+3</option>
+                    <option value="+4">+4</option>
+                    <option value="+5">+5</option>
+                    <option value="+6">+6</option>
+                    <option value="+7">+7</option>
+                    <option value="+8">+8</option>
+                    <option value="+9">+9</option>
+                    <option value="+10">+10</option>
+                    <option value="+11">+11</option>
+                    <option value="+12">+12</option>
+                </select>
+                <input type="tel" class="phone" name="phone" placeholder="Enter your phone" value="622 770 240" required>
+            </div>
+
+            <div class="input-group">
+                <label for="address">Adress:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your adress" value="prueba@icloud.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" value="usuario" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" value="password" required>
+            </div>
+
+            <button class="register-button" type="submit">Sign Up</button>
+
+            <div class="options">
+                <a href="login.html"><i class="icon fas fa-futbol"></i> Return to log in</a>
+            </div>
+        </form>
+    </div>
+    <script src="./js/form-validation.js"></script>
+</body>
+</html>
